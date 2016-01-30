@@ -6,7 +6,7 @@ import * as reducers from './COUNT';
 
 let initialState;
 
-initialState = Immutable.fromJS({
+initialState = Immutable.Map({
     sum: 0
 });
 

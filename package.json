@@ -11,9 +11,6 @@
     "type": "git",
     "url": "https://github.com/applaudience/redux-composer"
   },
-  "engines": {
-    "node": "^5.3.0"
-  },
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",

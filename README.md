@@ -31,3 +31,30 @@ initialState = Immutable.fromJS({
 
 export default createReducer(reducers, initialState);
 ```
+
+Action creators [`./src/app/actionCreators/countActionCreator.js`](https://github.com/gajus/redux-composer/blob/a4fa3078b7f1918ee9ddf582f92e54f3c0bcff05/src/app/actionCreators/countActionCreator.js) pass the reducer function instead of action type:
+
+```js
+import {
+    INCREMENT,
+    DECREMENT
+} from './../reducers/COUNT';
+
+let countActionCreator;
+
+countActionCreator = {};
+
+countActionCreator.increment = () => {
+    return {
+        type: INCREMENT
+    };
+};
+
+countActionCreator.decrement = (data) => {
+    return {
+        type: DECREMENT
+    };
+};
+
+export default countActionCreator;
+```

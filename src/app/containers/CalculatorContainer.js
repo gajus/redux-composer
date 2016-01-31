@@ -6,7 +6,7 @@ import {
     connect
 } from 'react-redux';
 import {
-    countActionCreator
+    CountActionCreator
 } from './../actionCreators';
 
 let CalculatorContainer,
@@ -31,7 +31,7 @@ mapStateToProps = (state) => {
 
 mapDispatchToActions = (dispatch) => {
     return {
-        countAction: bindActionCreators(countActionCreator, dispatch)
+        countAction: bindActionCreators(CountActionCreator, dispatch)
     };
 };
 

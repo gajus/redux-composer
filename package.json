@@ -22,11 +22,12 @@
     "clean-webpack-plugin": "^0.1.7",
     "copy-webpack-plugin": "^1.1.1",
     "create-index": "^0.1.2",
-    "express": "^4.13.4",
+    "express": "^5.0.0-alpha.2",
     "pragmatist": "^3.0.3",
+    "redux-create-reducer": "^1.0.0",
     "redux-logger": "^2.4.0",
-    "webpack": "^2.0.5-beta",
-    "webpack-dev-middleware": "^1.5.1",
+    "webpack": "^2.0.6-beta",
+    "webpack-dev-server": "^2.0.0-beta",
     "write-file-webpack-plugin": "^3.1.4"
   },
   "dependencies": {
@@ -35,7 +36,7 @@
     "react": "^0.15.0-alpha.1",
     "react-dom": "^0.15.0-alpha.1",
     "react-redux": "^4.1.2",
-    "redux": "^3.1.4",
+    "redux": "^3.1.6",
     "redux-immutable": "^3.0.3",
     "redux-thunk": "^1.0.3"
   }

@@ -1,7 +1,7 @@
 import Immutable from 'immutable';
 import {
     createReducer
-} from './../../lib/composer';
+} from 'redux-create-reducer';
 import * as reducers from './COUNT';
 
 let initialState;
@@ -10,4 +10,4 @@ initialState = Immutable.Map({
     sum: 0
 });
 
-export default createReducer(reducers, initialState);
+export default createReducer(initialState, reducers);

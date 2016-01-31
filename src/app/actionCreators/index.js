@@ -1,4 +1,4 @@
 'create index';
 
-export countActionCreator from './countActionCreator.js';
+export CountActionCreator from './CountActionCreator.js';
 

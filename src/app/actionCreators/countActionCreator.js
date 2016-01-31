@@ -1,22 +1,17 @@
-import {
-    INCREMENT,
-    DECREMENT
-} from './../reducers/COUNT';
+let CountActionCreator;
 
-let countActionCreator;
+CountActionCreator = {};
 
-countActionCreator = {};
-
-countActionCreator.increment = () => {
+CountActionCreator.increment = () => {
     return {
-        type: INCREMENT
+        type: 'COUNT_INCREMENT'
     };
 };
 
-countActionCreator.decrement = (data) => {
+CountActionCreator.decrement = () => {
     return {
-        type: DECREMENT
+        type: 'COUNT_DECREMENT'
     };
 };
 
-export default countActionCreator;
+export default CountActionCreator;

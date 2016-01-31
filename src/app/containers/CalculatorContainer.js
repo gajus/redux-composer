@@ -5,20 +5,17 @@ import {
 import {
     connect
 } from 'react-redux';
-import {
-    CountActionCreator
-} from './../actionCreators';
+import mapStoreActions from './../mapStoreActions';
 
 let CalculatorContainer,
-    mapStateToProps,
-    mapDispatchToActions;
+    mapStateToProps;
 
 CalculatorContainer = class extends React.Component {
     render () {
         return <div>
             <p>Sum {this.props.sum}</p>
-            <button onClick={this.props.countAction.decrement}>Decrement</button>
-            <button onClick={this.props.countAction.increment}>Increment</button>
+            <button onClick={this.props.CountActionCreator.decrement}>Decrement</button>
+            <button onClick={this.props.CountActionCreator.increment}>Increment</button>
         </div>;
     }
 };
@@ -29,10 +26,4 @@ mapStateToProps = (state) => {
     };
 };
 
-mapDispatchToActions = (dispatch) => {
-    return {
-        countAction: bindActionCreators(CountActionCreator, dispatch)
-    };
-};
-
-export default connect(mapStateToProps, mapDispatchToActions)(CalculatorContainer);
+export default connect(mapStateToProps, mapStoreActions)(CalculatorContainer);

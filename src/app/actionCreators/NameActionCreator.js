@@ -4,7 +4,7 @@ NameActionCreator = {};
 
 NameActionCreator.change = (name) => {
     return {
-        type: 'CHANGE_NAME',
+        type: 'NAME_CHANGE',
         data: {
             name
         }

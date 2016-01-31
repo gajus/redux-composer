@@ -5,10 +5,10 @@ import {
 } from 'react-redux';
 import store from './store';
 import {
-    CalculatorContainer
+    SandboxContainer
 } from './containers';
 
 ReactDOM.render(<Provider store={store}>
-    <CalculatorContainer />
+    <SandboxContainer />
 </Provider>, document.querySelector('#app'));
 

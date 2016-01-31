@@ -1,13 +1,7 @@
-import {
-    combineReducers
-} from 'redux-immutable';
+'create index';
 
-import countReducer from './countReducer';
+export COUNT from './COUNT';
+export NAME from './NAME';
+export countReducer from './countReducer.js';
+export nameReducer from './nameReducer.js';
 
-let rootReducer;
-
-rootReducer = combineReducers({
-    count: countReducer
-});
-
-export default rootReducer;

@@ -7,7 +7,7 @@ import * as reducers from './NAME';
 let initialState;
 
 initialState = Immutable.Map({
-    currentName: 'Eoo'
+    currentName: 'Foo'
 });
 
 export default createReducer(initialState, reducers);

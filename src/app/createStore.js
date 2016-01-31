@@ -5,7 +5,7 @@ import {
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import Immutable from 'immutable';
-import rootReducer from './reducers';
+import rootReducer from './rootReducer';
 
 let defaultInitialState;
 

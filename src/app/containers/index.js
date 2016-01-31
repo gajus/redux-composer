@@ -1,4 +1,4 @@
 'create index';
 
-export CalculatorContainer from './CalculatorContainer.js';
+export SandboxContainer from './SandboxContainer.js';
 
